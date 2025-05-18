@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "builds": [
+    {
+      "src": "app/profile-setup/api/route.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/profile-setup/api/(.*)",
+      "dest": "/app/profile-setup/api/route.ts"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_APP_URL": "https://opiol.vercel.app"
+  }
+} 

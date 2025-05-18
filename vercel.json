@@ -11,13 +11,7 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [
-    {
-      "src": "/profile-setup/api/(.*)",
-      "dest": "/app/profile-setup/api/route.ts"
-    }
-  ],
   "env": {
-    "NEXT_PUBLIC_APP_URL": "https://opiol.vercel.app"
+    "NEXT_PUBLIC_APP_URL": "https://opiolv2.vercel.app"
   }
 } 

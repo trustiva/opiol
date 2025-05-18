@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert to ICO</title>
+</head>
+<body>
+    <canvas id="canvas" width="16" height="16" style="display:none;"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Create a simple blue square with white 'O'
+        ctx.fillStyle = '#4F46E5';
+        ctx.fillRect(0, 0, 16, 16);
+        
+        ctx.fillStyle = 'white';
+        ctx.font = 'bold 12px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('O', 8, 8);
+        
+        // Convert to ICO
+        const link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = canvas.toDataURL('image/x-icon');
+        document.head.appendChild(link);
+    </script>
+</body>
+</html> 

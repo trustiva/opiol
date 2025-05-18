@@ -7,14 +7,11 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: {
-    default: 'OPIOL',
-    template: '%s – OPIOL',
-  },
-  description: 'همراه هوشمند شما برای تحصیل در خارج از کشور',
+  title: "OPIOL - راهنمای هوشمند تحصیل در خارج از کشور",
+  description: "سفر خود را با راهنمایی هوشمند تحصیلی و برنامه‌ریزی شخصی‌سازی کنید.",
   themeColor: '#1A1A1A',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon.svg',
   },
   openGraph: {
     title: 'OPIOL',

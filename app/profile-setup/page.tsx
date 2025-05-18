@@ -54,7 +54,7 @@ export default function ProfileSetup() {
     }
 
     try {
-      const response = await fetch('/profile-setup', {
+      const response = await fetch('/profile-setup/api', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
